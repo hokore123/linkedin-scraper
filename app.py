@@ -42,7 +42,7 @@ def scrape_profiles():
         driver.get("https://www.linkedin.com")
         driver.add_cookie({
             'name': 'li_at',
-            'value': 'AQEDAQSkLpQCbHrqAAABlpbZzngAAAGWuuZSeFYAoWY0LPRlAII-AyqzLvFXuuOvFjXhT93X4Cgx4y_qN-m3uycIQvtAQQ8UGIz3reJlbc9HA61oknKNPJocfdapILua2F2Wz__uhSALCEQvr1Nrr3x2',  # Replace with your actual LinkedIn session token
+            'value': 'AQEDAQSkLpQCbHrqAAABlpbZzngAAAGXDHbOJVYABMlnqcPC_dAlA6rWV0yh4Kt1szOHC8bC1xNtvpUCCY7E9vr6pG1oyUbsbznhGBokuVR6y7iuR1xrEMeOJut9Y8Y9iv0_h3eFS-cKE4eX5TH7N7Ys',  # Replace with your actual LinkedIn session token
             'domain': '.linkedin.com'
         })
         driver.get("https://www.linkedin.com")  # Reload to apply cookie
