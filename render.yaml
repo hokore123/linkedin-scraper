@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: linkedin-scraper-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: SECRET_TOKEN
+        value: abc123456
+      - key: LI_AT_COOKIE
+        value: AQEDAQSkLpQCbHrqAAABlpbZzngAAAGWuuZSeFYAoWY0LPRlAII-AyqzLvFXuuOvFjXhT93X4Cgx4y_qN-m3uycIQvtAQQ8UGIz3reJlbc9HA61oknKNPJocfdapILua2F2Wz__uhSALCEQvr1Nrr3x2
