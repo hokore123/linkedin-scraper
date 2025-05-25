@@ -6,6 +6,6 @@ services:
     startCommand: ./start.sh
     envVars:
       - key: SECRET_TOKEN
-        value: abc123456
+        value: secureToken_123ABC456def789XYZ
       - key: LI_AT_COOKIE
-        value: AQEDAQSkLpQCbHrqAAABlpbZzngAAAGWuuZSeFYAoWY0LPRlAII-AyqzLvFXuuOvFjXhT93X4Cgx4y_qN-m3uycIQvtAQQ8UGIz3reJlbc9HA61oknKNPJocfdapILua2F2Wz__uhSALCEQvr1Nrr3x2
+        value: AQEDAQSkLpQCbHrqAAABlpbZzngAAAGXDHbOJVYABMlnqcPC_dAlA6rWV0yh4Kt1szOHC8bC1xNtvpUCCY7E9vr6pG1oyUbsbznhGBokuVR6y7iuR1xrEMeOJut9Y8Y9iv0_h3eFS-cKE4eX5TH7N7Ys
