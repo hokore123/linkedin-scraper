@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 app = Flask(__name__)
-SECRET_TOKEN = "abc123456"  # Make sure this matches your n8n Bearer Auth token
+SECRET_TOKEN = "*p@$$w0rd?"  # Make sure this matches your n8n Bearer Auth token
 
 @app.route('/scrape', methods=['POST'])
 def scrape_profiles():
