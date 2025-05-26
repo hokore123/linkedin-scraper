@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import os
-import tempfile
-import shutil
 
 app = Flask(__name__)
 
@@ -36,10 +34,6 @@ def scrape_profiles():
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-
-    # Create a unique user data directory
-    user_data_dir = tempfile.mkdtemp()
-    options.add_argument(f'--user-data-dir={user_data_dir}')
 
     driver = webdriver.Chrome(options=options)
     results = []
@@ -75,8 +69,6 @@ def scrape_profiles():
 
     finally:
         driver.quit()
-        # Remove the temporary directory
-        if os.path.exists(user_data_dir):
-            shutil.rmtree(user_data_dir)
 
     return jsonify(results)
+
